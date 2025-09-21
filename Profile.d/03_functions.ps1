@@ -96,6 +96,24 @@ function videos { Set-ToUserFolder -Folder MyVideos }
 function home { Set-ToUserFolder -Folder UserProfile }
 
 # =================================================================
+# FILTRAR ANIMALES PEQUEÑOS CON COWSAY + LOLCAT
+# =================================================================
+function Invoke-SmallCow {
+    param(
+        [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
+        [string]$Message
+    )
+
+    $animalesPequeños = @(
+        "default", "tux", "kitty", "vader-koala", "duck",
+        "dragon-and-cow", "stegosaurus", "stimpy", "three-eyes", "turkey"
+    )
+    $animalAzar = Get-Random -InputObject $animalesPequeños
+
+    cowsay -f $animalAzar $Message | lolcat
+}
+
+# =================================================================
 # ATAJOS PARA CARPETAS DE PROYECTOS DE DESARROLLO
 # =================================================================
 

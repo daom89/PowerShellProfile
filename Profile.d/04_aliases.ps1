@@ -61,6 +61,9 @@ Set-Alias -Name rufff -Value "ruff format ." -Description "Formatea el código c
 # Desactiva el entorno virtual
 Set-Alias -Name dve -Value "deactivate" -Description "Desactiva el entorno virtual"
 
+# Creamos un alias corto para la funcion de smallcow
+Set-Alias -Name scow -Value Invoke-SmallCow
+
 # Unix aliases
 Set-Alias -Name cat -Value Get-Content
 Set-Alias -Name rm -Value Remove-Item
