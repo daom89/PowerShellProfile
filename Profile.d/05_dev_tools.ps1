@@ -4,7 +4,7 @@ Import-Module -Name Terminal-Icons
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
 # https://github.com/gluons/powershell-git-aliases?tab=readme-ov-file
 Import-Module git-aliases -DisableNameChecking
-oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
